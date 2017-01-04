@@ -11,11 +11,23 @@
 		<div class="option"><input type="radio" name="map" value="Africa">Africa</div><br>
 		<div class="option"><input type="radio" name="map" value="Australia">Australia</div><br>
 		<div class="option"><input type="radio" name="map" value="Europe">Europe</div><br>
-		<div> class="option"<input type="radio" name="map" value="North America">North America</div><br>
+		<div class="option"><input type="radio" name="map" value="North America">North America</div><br>
 		<div class="option"><input type="radio" name="map" value="South America">South America</div><br>
 		<div class="option"><input type="radio" name="map" value="Antarctica">Antarctica</div><br>
 		<div class="submit"><input type="submit"></div>
 	</form>
+	<style>
+	body {
+		background-color: Green;
+	}
+		
+	.option {
+  		border: 5px;
+  		background-color: Blue;
+  		font-size: 30px;
+		width: 150px;
+	}
+	</style>
 <?php
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $answer = $_POST["map"];
