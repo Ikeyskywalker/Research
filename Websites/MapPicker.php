@@ -7,14 +7,14 @@
 	<h1>Map Picker</h1>
 	<form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
 		Pick a continent: <br>
-		<div><input type="radio" name="map" value="Asia">Asia<br></div>
-		<div><input type="radio" name="map" value="Africa">Africa<br></div>
-		<div><input type="radio" name="map" value="Australia">Australia<br></div>
-		<div><input type="radio" name="map" value="Europe">Europe<br></div>
-		<div><input type="radio" name="map" value="North America">North America<br></div>
-		<div><input type="radio" name="map" value="South America">South America<br></div>
-		<div><input type="radio" name="map" value="Antarctica">Antarctica<br></div>
-		<div><input type="submit"></div>
+		<div class="option"><input type="radio" name="map" value="Asia">Asia</div><br>
+		<div class="option"><input type="radio" name="map" value="Africa">Africa</div><br>
+		<div class="option"><input type="radio" name="map" value="Australia">Australia</div><br>
+		<div class="option"><input type="radio" name="map" value="Europe">Europe</div><br>
+		<div> class="option"<input type="radio" name="map" value="North America">North America</div><br>
+		<div class="option"><input type="radio" name="map" value="South America">South America</div><br>
+		<div class="option"><input type="radio" name="map" value="Antarctica">Antarctica</div><br>
+		<div class="submit"><input type="submit"></div>
 	</form>
 <?php
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
